@@ -1,6 +1,12 @@
 
-# Created by https://www.gitignore.io/api/linux,macos,windows
-# Edit at https://www.gitignore.io/?templates=linux,macos,windows
+# Created by https://www.gitignore.io/api/linux,macos,jekyll,windows
+# Edit at https://www.gitignore.io/?templates=linux,macos,jekyll,windows
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 ### Linux ###
 *~
@@ -70,4 +76,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/linux,macos,windows
+# End of https://www.gitignore.io/api/linux,macos,jekyll,windows
