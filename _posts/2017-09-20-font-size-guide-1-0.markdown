@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "My YouTube Channel"
-date:       2017-04-11 15:34:00 +1300
-categories: youtube channel watch
+title:      "Font Size Guide 1.0"
+date:       2017-09-20 20:17:00 +1300
+categories: font size guide
 ---
 
 This Is The Official Font Size Guide 1.0:
