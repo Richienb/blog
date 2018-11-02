@@ -25,7 +25,10 @@ github_username:  Richienb # GitHub username
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+kramdown:
+  input: GFM
+  hard_wrap: false
+theme: Minima
 plugins:
   - jekyll-feed
   
