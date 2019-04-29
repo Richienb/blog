@@ -26,10 +26,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-theme: Minima
+remote_theme: Richienb/jekyll-theme-richienb
 plugins:
   - jekyll-feed
-  
+
 port: 8080 # Default port
 
 # Exclude from processing.
