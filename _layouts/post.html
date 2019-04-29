@@ -1,23 +1,449 @@
 ---
 layout: default
 ---
+<style>
+    article.post {
+      display: flex;
+      flex-direction: column;
+    }
+    article.post img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    article.post figure > img {
+      display: block;
+    }
+    article.post figcaption {
+      font-size: 14px;
+    }
+    article.post ul,
+    article.post ol {
+      margin-left: 30px;
+    }
+    article.post li > ul,
+    article.post li > ol {
+      margin-bottom: 0;
+    }
+    article.post a {
+      color: #2a7ae2;
+      text-decoration: none;
+    }
+    article.post a:visited {
+      color: #1756a9;
+    }
+    article.post a:hover {
+      color: #111;
+      text-decoration: underline;
+    }
+    article.post .social-media-list a:hover {
+      text-decoration: none;
+    }
+    article.post .social-media-list a:hover .username {
+      text-decoration: underline;
+    }
+    article.post blockquote {
+      color: #828282;
+      border-left: 4px solid #e8e8e8;
+      padding-left: 15px;
+      font-size: 18px;
+      letter-spacing: -1px;
+      font-style: italic;
+    }
+    article.post blockquote > :last-child {
+      margin-bottom: 0;
+    }
+    article.post pre,
+    article.post code {
+      font-size: 15px;
+      border: 1px solid #e8e8e8;
+      border-radius: 3px;
+      background-color: #eef;
+    }
+    article.post code {
+      padding: 1px 5px;
+    }
+    article.post pre {
+      padding: 8px 12px;
+      overflow-x: auto;
+    }
+    article.post pre > code {
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    article.post .wrapper {
+      max-width: -webkit-calc(800px - (30px * 2));
+      max-width: calc(800px - (30px * 2));
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    @media screen and (max-width: 800px) {
+      article.post .wrapper {
+        max-width: -webkit-calc(800px - (30px));
+        max-width: calc(800px - (30px));
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    article.post .wrapper:after,
+    article.post .footer-col-wrapper:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    article.post .svg-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      fill: #828282;
+      padding-right: 5px;
+      vertical-align: text-top;
+    }
+    article.post .social-media-list li + li {
+      padding-top: 5px;
+    }
+    article.post table {
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: left;
+      color: #3f3f3f;
+      border-collapse: collapse;
+      border: 1px solid #e8e8e8;
+    }
+    article.post table tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+    article.post table th,
+    article.post table td {
+      padding: 10px 15px;
+    }
+    article.post table th {
+      background-color: #f0f0f0;
+      border: 1px solid #dedede;
+      border-bottom-color: #c9c9c9;
+    }
+    article.post table td {
+      border: 1px solid #e8e8e8;
+    }
+    article.post .site-header {
+      border-top: 5px solid #424242;
+      border-bottom: 1px solid #e8e8e8;
+      min-height: 55.95px;
+      position: relative;
+    }
+    article.post .site-title {
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 54px;
+      letter-spacing: -1px;
+      margin-bottom: 0;
+      float: left;
+    }
+    article.post .site-title,
+    article.post .site-title:visited {
+      color: #424242;
+    }
+    article.post .site-nav {
+      float: right;
+      line-height: 54px;
+    }
+    article.post .site-nav .nav-trigger {
+      display: none;
+    }
+    article.post .site-nav .menu-icon {
+      display: none;
+    }
+    article.post .site-nav .page-link {
+      color: #111;
+      line-height: 1.5;
+    }
+    article.post .site-nav .page-link:not(:last-child) {
+      margin-right: 20px;
+    }
+    article.post .site-footer {
+      border-top: 1px solid #e8e8e8;
+      padding: 30px 0;
+    }
+    article.post .footer-heading {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    article.post .contact-list,
+    article.post .social-media-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    article.post .footer-col-wrapper {
+      font-size: 15px;
+      color: #828282;
+      margin-left: -15px;
+    }
+    article.post .footer-col {
+      float: left;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+    article.post .footer-col-1 {
+      width: -webkit-calc(35% - (30px/2));
+      width: calc(35% - (30px/2));
+    }
+    article.post .footer-col-2 {
+      width: -webkit-calc(20% - (30px/2));
+      width: calc(20% - (30px/2));
+    }
+    article.post .footer-col-3 {
+      width: -webkit-calc(45% - (30px/2));
+      width: calc(45% - (30px/2));
+    }
+    article.post .page-content {
+      padding: 30px 0;
+      flex: 1;
+    }
+    article.post .page-heading {
+      font-size: 32px;
+    }
+    article.post .post-list-heading {
+      font-size: 28px;
+    }
+    article.post .post-list {
+      margin-left: 0;
+      list-style: none;
+    }
+    article.post .post-list > li {
+      margin-bottom: 30px;
+    }
+    article.post .post-meta {
+      font-size: 14px;
+      color: #828282;
+    }
+    article.post .post-link {
+      display: block;
+      font-size: 24px;
+    }
+    article.post .highlight {
+      background: #fff;
+    }
+    article.post .highlighter-rouge .highlight {
+      background: #eef;
+    }
+    article.post .highlight .c {
+      color: #998;
+      font-style: italic;
+    }
+    article.post .highlight .err {
+      color: #a61717;
+      background-color: #e3d2d2;
+    }
+    article.post .highlight .k {
+      font-weight: 700;
+    }
+    article.post .highlight .o {
+      font-weight: 700;
+    }
+    article.post .highlight .cm {
+      color: #998;
+      font-style: italic;
+    }
+    article.post .highlight .cp {
+      color: #999;
+      font-weight: 700;
+    }
+    article.post .highlight .c1 {
+      color: #998;
+      font-style: italic;
+    }
+    article.post .highlight .cs {
+      color: #999;
+      font-weight: 700;
+      font-style: italic;
+    }
+    article.post .highlight .gd {
+      color: #000;
+      background-color: #fdd;
+    }
+    article.post .highlight .gd .x {
+      color: #000;
+      background-color: #faa;
+    }
+    article.post .highlight .ge {
+      font-style: italic;
+    }
+    article.post .highlight .gr {
+      color: #a00;
+    }
+    article.post .highlight .gh {
+      color: #999;
+    }
+    article.post .highlight .gi {
+      color: #000;
+      background-color: #dfd;
+    }
+    article.post .highlight .gi .x {
+      color: #000;
+      background-color: #afa;
+    }
+    article.post .highlight .go {
+      color: #888;
+    }
+    article.post .highlight .gp {
+      color: #555;
+    }
+    article.post .highlight .gs {
+      font-weight: 700;
+    }
+    article.post .highlight .gu {
+      color: #aaa;
+    }
+    article.post .highlight .gt {
+      color: #a00;
+    }
+    article.post .highlight .kc {
+      font-weight: 700;
+    }
+    article.post .highlight .kd {
+      font-weight: 700;
+    }
+    article.post .highlight .kp {
+      font-weight: 700;
+    }
+    article.post .highlight .kr {
+      font-weight: 700;
+    }
+    article.post .highlight .kt {
+      color: #458;
+      font-weight: 700;
+    }
+    article.post .highlight .m {
+      color: #099;
+    }
+    article.post .highlight .s {
+      color: #d14;
+    }
+    article.post .highlight .na {
+      color: teal;
+    }
+    article.post .highlight .nb {
+      color: #0086b3;
+    }
+    article.post .highlight .nc {
+      color: #458;
+      font-weight: 700;
+    }
+    article.post .highlight .no {
+      color: teal;
+    }
+    article.post .highlight .ni {
+      color: purple;
+    }
+    article.post .highlight .ne {
+      color: #900;
+      font-weight: 700;
+    }
+    article.post .highlight .nf {
+      color: #900;
+      font-weight: 700;
+    }
+    article.post .highlight .nn {
+      color: #555;
+    }
+    article.post .highlight .nt {
+      color: navy;
+    }
+    article.post .highlight .nv {
+      color: teal;
+    }
+    article.post .highlight .ow {
+      font-weight: 700;
+    }
+    article.post .highlight .w {
+      color: #bbb;
+    }
+    article.post .highlight .mf {
+      color: #099;
+    }
+    article.post .highlight .mh {
+      color: #099;
+    }
+    article.post .highlight .mi {
+      color: #099;
+    }
+    article.post .highlight .mo {
+      color: #099;
+    }
+    article.post .highlight .sb {
+      color: #d14;
+    }
+    article.post .highlight .sc {
+      color: #d14;
+    }
+    article.post .highlight .sd {
+      color: #d14;
+    }
+    article.post .highlight .s2 {
+      color: #d14;
+    }
+    article.post .highlight .se {
+      color: #d14;
+    }
+    article.post .highlight .sh {
+      color: #d14;
+    }
+    article.post .highlight .si {
+      color: #d14;
+    }
+    article.post .highlight .sx {
+      color: #d14;
+    }
+    article.post .highlight .sr {
+      color: #009926;
+    }
+    article.post .highlight .s1 {
+      color: #d14;
+    }
+    article.post .highlight .ss {
+      color: #990073;
+    }
+    article.post .highlight .bp {
+      color: #999;
+    }
+    article.post .highlight .vc {
+      color: teal;
+    }
+    article.post .highlight .vg {
+      color: teal;
+    }
+    article.post .highlight .vi {
+      color: teal;
+    }
+    article.post .highlight .il {
+      color: #099;
+    }
+</style>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <h1 class="post-title p-name mdc-typography--headline1" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta mdc-typography--caption">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-      {%- endif -%}</p>
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">
+                {{ page.author | escape }}
+            </span>
+        </span>
+      {%- endif -%}
+    </p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <p class="post-content e-content mdc-typography--body1" itemprop="articleBody">
     {{ content }}
-  </div>
+  </p>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

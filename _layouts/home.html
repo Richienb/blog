@@ -2,33 +2,69 @@
 layout: default
 ---
 
+<style>
+
+    .mdc-card__primary-action {
+    padding: 1rem;
+}
+
+.mdc-card__title {
+    margin: 0;
+}
+
+.mdc-card__primary-action > p {
+    margin: 0;
+}
+
+.mdc-top-app-bar--fixed-adjust {
+    padding: 0;
+}
+</style>
+
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading mdc-typography--headline1">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+    <!-- <h2 class="post-list-heading mdc-typography--headline3">{{ page.list_title | default: "Posts" }}</h2> -->
+    <!-- <ul class="post-list"> -->
+    <div class="mdc-layout-grid">
+        <div class="mdc-top-app-bar--fixed-adjust">
+            <div class="mdc-layout-grid__inner">
+          {%- for post in site.posts -%}
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"><section class="mdc-card mdc-card--outlined content-card">
+            <a class="mdc-card__primary-action" href="{{ post.url | relative_url }}" data-mdc-auto-init="MDCRipple">
+                <h2 class="mdc-card__title mdc-typography--headline6">{{ post.title }}</h2>
+                <p class="mdc-card__secondary mdc-typography--body2">{{ post.excerpt }}</p>
+            </a>
+            <div class="mdc-card__actions">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+                <div class="mdc-card__action-buttons">
+                    <a href="{{ post.url | relative_url }}" class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple"><time>{{ post.date | date: date_format }}</time></a>
+                </div>
+            </div>
+        </section></div>
+
+
+          {%- endfor -%}
+      </div>
+    </div>
+    </div>
+
+    <!-- </ul> -->
+
+    <a class="mdc-button mdc-button--outlined" href="{{ "/feed.xml" | relative_url }}" data-mdc-auto-init="MDCRipple">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#3F51B5" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+            <circle cx="6.18" cy="17.82" r="2.18"/>
+            <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+        </svg> Subscribe
+    </a>
   {%- endif -%}
 
 </div>
