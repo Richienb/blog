@@ -5,40 +5,38 @@ date:       2017-05-06 11:33:00 +1300
 categories: favourite minecraft seed pc
 ---
 
-This is my favourite Minecraft PC Seed. I have made a world download for PE as well.  
-The seed is: **Richienb**  
-For all the features, play in Minecraft PC 1.11 or later  
-  
-If you don't have Minecraft PC 1.11 or later but still want to play with all the features in this world, you can download it below.  
-  
-For Minecraft PC: [https://goo.gl/jKkhl2](https://goo.gl/jKkhl2)  
-For Minecraft PE: [https://goo.gl/X81Kl1](https://goo.gl/X81Kl1)  
-  
-All possible positions structures might spawn around X = 0 and Z = 0 according to [Chunkbase](http://chunkbase.com/apps):  
-  
+My favourite Minecraft Java Edition seed is **Richienb**. I've also created a world download from Bedrock edition as well.
+
+For all the benefits of the seed, play in Minecraft Java Edition 1.11 or later.
+
+For Minecraft Java Edition: [https://goo.gl/jKkhl2](https://goo.gl/jKkhl2)  
+For Minecraft Bedrock Edition: [https://goo.gl/X81Kl1](https://goo.gl/X81Kl1)  
+
+Here are all the possible positions structures that might spawn around X = 0 and Z = 0 according to [Chunkbase](http://chunkbase.com/apps):  
+
 [Slime Chunks](http://chunkbase.com/apps/slime-finder#Richienb):  
 
 [![](https://2.bp.blogspot.com/-lnMl6Ta3H7M/WQzwaoAXJFI/AAAAAAAAFZg/Ue0V2m0Ic9EQwvcEHddH_p0-Ug3m53JsACLcB/s640/slime_Richienb.png)](https://2.bp.blogspot.com/-lnMl6Ta3H7M/WQzwaoAXJFI/AAAAAAAAFZg/Ue0V2m0Ic9EQwvcEHddH_p0-Ug3m53JsACLcB/s1600/slime_Richienb.png)
-  
+
 [Villages](http://chunkbase.com/apps/village-finder#Richienb):  
 [![](https://4.bp.blogspot.com/-Go8KsvDnYzE/WQzw9iDm5_I/AAAAAAAAFZo/4PlhYr3qkZgx0JaRfkNKmcI2I6FmT9Q9QCLcB/s640/villages_Richienb.png)](https://4.bp.blogspot.com/-Go8KsvDnYzE/WQzw9iDm5_I/AAAAAAAAFZo/4PlhYr3qkZgx0JaRfkNKmcI2I6FmT9Q9QCLcB/s1600/villages_Richienb.png)  
-  
+
 [Mineshafts](http://chunkbase.com/apps/mineshaft-finder):  
 
 [![](https://1.bp.blogspot.com/-2BFFzmDz0CI/WQ0D6JSmMvI/AAAAAAAAFbs/-4CTZs5OUZEGYMPmphS_ovByid5AAhW2ACLcB/s640/shaft_Richienb.png)](https://1.bp.blogspot.com/-2BFFzmDz0CI/WQ0D6JSmMvI/AAAAAAAAFbs/-4CTZs5OUZEGYMPmphS_ovByid5AAhW2ACLcB/s1600/shaft_Richienb.png)
-  
+
 [Nether Fortresses](http://chunkbase.com/apps/nether-fortress-finder#Richienb):  
 
 [![](https://3.bp.blogspot.com/-iNMWBHnb8nM/WQz0BL2Gl9I/AAAAAAAAFaA/ESo32uX1ZIwstRgbo6WDlS7xCnnLzfWDACEw/s640/netherfortress_Richienb.png)](https://3.bp.blogspot.com/-iNMWBHnb8nM/WQz0BL2Gl9I/AAAAAAAAFaA/ESo32uX1ZIwstRgbo6WDlS7xCnnLzfWDACEw/s1600/netherfortress_Richienb.png)
-  
+
 [Strongholds](http://chunkbase.com/apps/stronghold-finder#Richienb):  
 
 [![](https://1.bp.blogspot.com/-JU1Wosr2FWo/WQz1tshQ0qI/AAAAAAAAFaI/7SSkdSYOfKUbA554hPhpEAp3p2017O1DQCLcB/s640/strongholds_Richienb.png)](https://1.bp.blogspot.com/-JU1Wosr2FWo/WQz1tshQ0qI/AAAAAAAAFaI/7SSkdSYOfKUbA554hPhpEAp3p2017O1DQCLcB/s1600/strongholds_Richienb.png)
-  
+
 [Desert Temples](http://chunkbase.com/apps/desert-temple-finder#Richienb):  
 
 [![](https://4.bp.blogspot.com/-EH9B4uScC18/WQz2MXd8NOI/AAAAAAAAFaM/ua3aheBbU1cH0eBNq2CFBLgqzPOJHMxGACLcB/s640/deserttemples_Richienb.png)](https://4.bp.blogspot.com/-EH9B4uScC18/WQz2MXd8NOI/AAAAAAAAFaM/ua3aheBbU1cH0eBNq2CFBLgqzPOJHMxGACLcB/s1600/deserttemples_Richienb.png)
-  
+
 [  
 ](http://chunkbase.com/apps/ocean-monument-finder#Richienb)[  
 ](http://chunkbase.com/apps/ocean-monument-finder#Richienb)[Ocean Monuments](http://chunkbase.com/apps/ocean-monument-finder#Richienb):  
@@ -69,6 +67,6 @@ All possible positions structures might spawn around X = 0 and Z = 0 according t
 
 [![](https://2.bp.blogspot.com/-L2hcVuoIet8/WQz9E6wnMQI/AAAAAAAAFbU/boEr8roeopsDtqoEUvt5aQ4x_sRaatKqwCLcB/s640/mansions_Richienb.png)](https://2.bp.blogspot.com/-L2hcVuoIet8/WQz9E6wnMQI/AAAAAAAAFbU/boEr8roeopsDtqoEUvt5aQ4x_sRaatKqwCLcB/s1600/mansions_Richienb.png)
 
-#### I hope you found this useful!
+I hope you found this useful!
 
-> This page was imported from the old blog with little to no modifications
+> This page was imported from the old blog with little modification.

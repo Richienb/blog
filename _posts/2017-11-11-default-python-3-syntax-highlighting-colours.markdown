@@ -5,7 +5,7 @@ date:       2017-11-11 15:34:00 +1300
 categories: default python 3 syntax highlighting colours
 ---
 
-### These Are The Default Python 3 Syntax Highlighting Colours
+Here are the default Python 3 syntax highlighting colours
 
 *   Comments: #dd0000
 *   Keywords: #ff7700
@@ -22,4 +22,4 @@ categories: default python 3 syntax highlighting colours
 *   Shell Stdout: #0000ff
 *   Shell Stderr: #ff0000
 
-> This page was imported from the old blog with little to no modifications
+> This page was imported from the old blog with little modification.

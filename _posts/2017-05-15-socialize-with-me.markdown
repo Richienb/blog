@@ -5,6 +5,6 @@ date:       2017-05-15 16:17:00 +1300
 categories: socialise know competition
 ---
 
-[Socialize With Richie Bendall](https://gleam.io/05jjT/socialize-with-richie-bendall)
+Please, [Socialize With Richie Bendall](https://gleam.io/05jjT/socialize-with-richie-bendall).
 
-> This page was imported from the old blog with little to no modifications
+> This page was imported from the old blog with little modification.

@@ -7,27 +7,26 @@ categories: whack game trump
 
 Check out my whack a trump game. In it, you can whack Donald Trump.
 
-Download the installer *Windows Only* Here: https://goo.gl/x7JCf9
-
+Download the installer for **Windows only** [here](https://goo.gl/x7JCf9).
 ___
 
 Instructions for setup:
 
-1. Download the installer [Press the arrow in the top-right of the screen]
-2. Extract the contents of the zip file to your desktop
-3. Open the installation folder
-4. Open setup.exe
-5. Press Install
+1. Download the installer
+1. Extract the contents of the zip file to your desktop
+1. Open the installation folder
+1. Open setup.exe
+1. Press install
 
 ___
 
 Instructions to open the whack a trump later:
 
 1. Open the installation folder
-2. Open Whack A Trump.application
+1. Open Whack A Trump.application
 
 ___
 
 That's it. Enjoy whacking trumps.
 
-> This page was imported from the old blog with little to no modifications
+> This page was imported from the old blog with little modification.
